@@ -6,6 +6,8 @@ $contasCorrentes = [
     12345678930 => ['titular' => 'Maria', 'saldo' => 2000]
 ];
 
+$contasCorrentes[12345678940] = ['titular' => 'Isis', 'saldo' => 2000];
+
 foreach ($contasCorrentes as $cpf => $conta) {
-    echo $cpf . PHP_EOL;
+    echo $conta['titular'] . PHP_EOL;
 }
